@@ -1,0 +1,1 @@
+"0","curve(dt(x, df=2), from=-10, to =10, col=""red"", add=TRUE)"

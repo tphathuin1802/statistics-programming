@@ -1,0 +1,4 @@
+"0","store_value <- vector(sum_of_zsquare(n))
+"
+"2","Error in vector(sum_of_zsquare(n)) : invalid 'mode' argument
+"

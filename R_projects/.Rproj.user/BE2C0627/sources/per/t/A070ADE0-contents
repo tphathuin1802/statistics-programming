@@ -1,0 +1,257 @@
+---
+title: "R_da_2024"
+author: "Phat Huynh"
+date: "2025-09-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+dat2215=data.frame("Source"=c("Consumer guide", "Dealership", "Word of mouth", "Internet"), "Count"=c(172,93,40,26))
+prop=prop.table(dat2215$Count)
+round=round(prop*100,2)
+labs=paste(dat2215$Source, round, "%" )
+pie(dat2215$Count, labels=labs)
+  ```
+```
+
+
+```{r}
+3+5
+12-4
+6*7
+20/4
+2^10
+31 %% 7
+31%/%7
+
+```
+```{r}
+options(width=50)
+1:20
+```
+
+```{r}
+x <- 10
+y <- -3 + 5
+z = x*y
+
+```
+
+```{r}
+q() # quit command
+```
+
+```{r}
+q("no") # by position
+q(save = "no") # by name
+q(runLast = FALSE) # skip earlier defaults
+q( , , FALSE) # commas for missing args
+```
+
+
+```{r}
+#built in function
+sqrt(16)
+log(100,10)
+mean(c(1,2,2,4,5))
+
+```
+
+```{r}
+square <- function(x){
+  return(x^2)
+}
+square(3)
+```
+```{r}
+x1 <- c(0,7,8)
+print(x1)
+```
+```{r}
+number5to20 <- 5:20
+number5to20
+```
+
+```{r}
+x1[2]
+```
+
+```{r}
+number5to20[c(1,3)]
+```
+```{r}
+number5to20[5:7]
+```
+```{r}
+x1[-2]
+```
+```{r}
+number5to20[-(3:5)]
+```
+
+```{r}
+1:4 %% 2:3
+```
+```{r}
+1:4 %% c(2,3,2,3)
+```
+
+```{r}
+seq(1,21,by =2)
+```
+
+```{r}
+rep(3,12)
+```
+
+```{r}
+rep(seq(2, 20, by=2), 2)
+```
+```{r}
+rep(c(1,4), c(3,2))
+```
+```{r}
+rep(seq(2, 20, 2), rep(2, 10))
+```
+```{r}
+some.evens <- NULL
+some.evens[seq(2,20,2)] <-seq(2,20,2)
+some.evens
+
+```
+
+
+```{r}
+x2 <- c(0,7,8)
+x2/x2
+```
+
+
+```{r}
+1/x2 # Inf is infinity
+```
+
+```{r}
+x3 <- 1:10
+
+var(x3)
+mean(x3)
+median(x3)
+summary(x3)
+```
+
+```{r}
+colors <- c("red", "yellow", "blue")
+more.colors <- c(colors, "green", "magenta", "cyan")
+z <- c("red", "green", 1)
+colors
+more.colors
+```
+```{r}
+substr(colors, 1, 2)
+```
+```{r}
+paste(colors, "flowers")
+```
+
+```{r}
+paste("I like", colors, sep=":")
+```
+```{r}
+grp <- c("control", "treatment", "control", "treatment")
+grp
+grp <- factor(grp)
+grp
+```
+```{r}
+as.integer(grp)
+levels(grp)
+```
+
+
+```{r}
+levels(grp)[as.integer(grp)]
+```
+
+
+```{r}
+is.na(some.evens)
+```
+
+
+```{r}
+m <- matrix(1:6, nrow=2, ncol=3)
+m
+```
+
+
+```{r}
+a <- array(1:24, c(3, 4, 2))
+a
+```
+
+
+```{r}
+a <- array(1:24, c(3, 4, 3))
+a
+```
+
+
+```{r}
+colors <- c("red", "yellow", "blue")
+numbers <- c(1, 2, 3)
+colors.and.numbers <- data.frame(colors, numbers,
+more.numbers = c(4, 5, 6)) # + is for new row in R, not an operation.
+colors.and.numbers
+```
+
+```{r}
+func_sum <- function(x){
+  return(sum(1:x))
+}
+
+function_man_sum <- function(n){
+  return((n*(n+1)/2))
+}
+
+func_sum(100) == function_man_sum(100)
+```
+
+```{r}
+sum_from_1_to_n <- function(n) {
+  numbers <- 1:n      
+  total <- sum(numbers) 
+  return(total)        
+}
+
+sum_from_1_to_n(100)
+
+```
+```{r}
+n <- 1:100
+sum_of_zsquare <- function(n){
+  return(n*(n+1)/2)
+}
+print(sum_of_zsquare(n))
+```
+
+```{r}
+store_value <- Vectorize(sum_of_zsquare(n))
+store_value
+```
+
+```{r}
+rep(0:4, each="5")
+```
+
+```{r}
+rep(0:4, each="4")
+```
+```{r}
+seq(more.colors, c(1,4,2))
+```
+

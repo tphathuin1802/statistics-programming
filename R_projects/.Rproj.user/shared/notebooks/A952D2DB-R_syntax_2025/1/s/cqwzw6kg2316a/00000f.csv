@@ -1,0 +1,8 @@
+"0","paste(""I like"", colors, sep="":"")
+"
+"1","[1]"
+"1"," ""I like:red""   "
+"1"," ""I like:yellow"""
+"1"," ""I like:blue""  "
+"1","
+"

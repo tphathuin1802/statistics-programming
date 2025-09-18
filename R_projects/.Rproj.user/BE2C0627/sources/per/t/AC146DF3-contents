@@ -1,0 +1,50 @@
+```{r}
+x <- 10
+y <- 3.14
+z <- "hello R"
+
+print(x)
+print(y)
+print(z)
+class(x)
+class(y)
+class(z)
+```
+
+
+```{r}
+vec <- c(1,2,3,4,5)
+print(vec)
+lst <- list(a=1, b="text", c=TRUE)
+print(lst)
+df <- data.frame(name=c("a","b","c"), score=c(9,8,10))
+print(df)
+```
+
+```{r}
+for (i in 1:5) {
+  print(i)
+}
+```
+```{r}
+if (mean(vec) >3){
+  print("mean of vec more than 3")
+}else{
+  print("mean of vec is less than 3")
+}
+```
+
+```{r}
+square <- function(x){
+  return(x^2)
+}
+
+square(6)
+```
+
+```{r}
+# write.csv(df, "data.csv", row.names = FALSE)
+data <- read.csv("data.csv")
+head(data)
+```
+

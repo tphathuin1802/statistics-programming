@@ -1,0 +1,5 @@
+"0","dat2215=data.frame(""Source""=c(""Consumer guide"", ""Dealership"", ""Word of mouth"", ""Internet""), ""Count""=c(172,93,40,26))"
+"0","prop=prop.table(dat2215$Count)"
+"0","round=round(prop*100,2)"
+"0","labs=paste(dat2215$Source, round, ""%"" )"
+"0","pie(dat2215$Count, labels=labs)"

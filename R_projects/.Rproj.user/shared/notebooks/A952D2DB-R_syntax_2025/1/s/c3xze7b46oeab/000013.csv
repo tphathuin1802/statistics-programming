@@ -1,0 +1,4 @@
+"0","seq(more.colors, c(1,4,2))"
+"2","Error in seq.default(more.colors, c(1, 4, 2)) : 
+  'from' must be of length 1
+"

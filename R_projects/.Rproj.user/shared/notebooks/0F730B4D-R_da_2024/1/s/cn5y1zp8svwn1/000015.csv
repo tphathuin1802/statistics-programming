@@ -1,0 +1,1 @@
+"0","curve(dchisq(x, df=15), from=0, to =10, col=""green"", add=TRUE)"
